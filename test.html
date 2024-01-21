@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @keyframes anim {
+    100% {
+      border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+      backdrop-filter: blur(100px);
+    }
+  }
+
+  .animated-element {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation-name: anim;
+    animation-duration: 3s; /* Duration of one cycle */
+    animation-iteration-count: infinite; /* Loop indefinitely */
+    animation-timing-function: linear; /* Maintain a consistent speed throughout */
+  }
+</style>
+</head>
+<body>
+
+<div class="animated-element"></div>
+
+</body>
+</html>
